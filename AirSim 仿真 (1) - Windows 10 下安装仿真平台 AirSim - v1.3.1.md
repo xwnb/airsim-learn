@@ -27,11 +27,11 @@
 
 巨硬官网[下载](https://visualstudio.microsoft.com/zh-hans/vs/) `vs_community`安装包，执行在线安装，比较耗时。没办法，vs 2017 之后没有提供离线安装包了。必须安装的组件 `使用C++的桌面开发` 和 `Windows 10 SDK` 。我这里直接安装了 `使用C++的桌面开发` ，和 `使用C++的游戏开发` ，基本上和 C++ 相关的开发组件都有了。其他的就根据自己的需求来。我这里就安装的这几个工作负载，具体的组件都是默认选项。
 
-![image-20200606121633117](AirSim 仿真 (1) - Windows 10 下安装仿真平台 AirSim - v1.3.1.assets/image-20200606121633117.png)
+![image-20200606121633117](<AirSim%20%E4%BB%BF%E7%9C%9F%20(1)%20-%20Windows%2010%20%E4%B8%8B%E5%AE%89%E8%A3%85%E4%BB%BF%E7%9C%9F%E5%B9%B3%E5%8F%B0%20AirSim%20-%20v1.3.1.assets/image-20200606121633117.png>)
 
 ### 安装 Unreal Engine
 
-- [下载](https://www.unrealengine.com/zh-CN/get-now) 安装 Epic Games Launcher。( **PS**：这段时间 Epic 正在免费送游戏呢，白嫖了 GTA5 ，文明 6， 无主之地等，哈哈哈)。
+- [下载](https://www.unrealengine.com/zh-CN/get-now) 安装 Epic Games Launcher。( **PS**：这段时间 Epic 正在免费送游戏呢，白嫖了 GTA 5 ，文明 6， 无主之地等，哈哈哈)。
 
 - 安装登陆器的时候可能会注册账号之类的。
 
@@ -39,11 +39,11 @@
 
 - 首先登录。未安装 UE 的时候，在右上角是灰色的按钮。进入到 **`库`** ，选择安装的 UE 版本。这里我就选择最新的引擎版本安装了 **`4.25.1`**。
 
-  <img src="AirSim 仿真 (1) - Windows 10 下安装仿真平台 AirSim - v1.3.1.assets/image-20200606123115428.png" alt="image-20200606123115428" style="zoom:50%;" />
+  ![image-20200606123115428](<AirSim%20%E4%BB%BF%E7%9C%9F%20(1)%20-%20Windows%2010%20%E4%B8%8B%E5%AE%89%E8%A3%85%E4%BB%BF%E7%9C%9F%E5%B9%B3%E5%8F%B0%20AirSim%20-%20v1.3.1.assets/image-20200606123115428.png>)
 
-* 引擎下载比较大，大概 11G 左右（**PS**：相比于游戏动辄五六十 G 来说，还是比较矜持的.如果下载比较慢，可以试下挂加速器下载。没错，就是打游戏用的那个加速器。我这里用的是挂的是鹅厂的加速器（非广告）。选择 Epic 游戏加速下载，反正是被拉满速了，不过其实我也不知道有没有用，因为我没试过不挂加速器是咋样的速度）
+- 引擎下载比较大，大概 11 G 左右（**PS**：相比于游戏动辄五六十 G 来说，还是比较矜持的.如果下载比较慢，可以试下挂加速器下载。没错，就是打游戏用的那个加速器。我这里用的是挂的是鹅厂的加速器（非广告）。选择 Epic 游戏加速下载，反正是被拉满速了，不过其实我也不知道有没有用，因为我没试过不挂加速器是咋样的速度）
 
-  <img src="AirSim 仿真 (1) - Windows 10 下安装仿真平台 AirSim - v1.3.1.assets/image-20200606123716438.png" alt="image-20200606123716438" style="zoom:50%;" />
+  ![image-20200606123716438](<AirSim%20%E4%BB%BF%E7%9C%9F%20(1)%20-%20Windows%2010%20%E4%B8%8B%E5%AE%89%E8%A3%85%E4%BB%BF%E7%9C%9F%E5%B9%B3%E5%8F%B0%20AirSim%20-%20v1.3.1.assets/image-20200606123716438.png>)
 
 **PS**：手册上建议`AirSim v1.3.1` 建议安装的 UE 版本 **4.24**，虽然 >=4.22 也可以正常工作。所以我这里建议就直接安装最新的吧。
 
@@ -53,17 +53,17 @@
 
 ### 构建 AirSim
 
-- 先 `Clone` 仓库吧：[官方仓库地址](https://github.com/Microsoft/AirSim)： https://github.com/Microsoft/AirSim。
+- 先 `Clone` 仓库吧：[官方仓库地址](https://github.com/Microsoft/AirSim)： <https://github.com/Microsoft/AirSim。>
 
   ```bash
   git clone https://github.com/Microsoft/AirSim.git
   ```
 
-- 咳咳，国内网络从 `github`拉代码都比较……慢……我这百兆电信也就……几十 kb……所以这里就用 [码云](https://gitee.com/troxyz/airsim) 同步了一下：https://gitee.com/troxyz/airsim （同步日期：2020.6.6）。
+- 咳咳，国内网络从 `github`拉代码都比较……慢……我这百兆电信也就……几十 kb……所以这里就用 [码云](https://gitee.com/troxyz/airsim) 同步了一下：<https://gitee.com/troxyz/airsim> （同步日期：2020.6.6）。
 
 - 接下去就 `git clone` 吧，基本能拉满速。我这里拉了 v1.3.1 的最新的代码，历史代码我也暂时用不到。
 
-  ```
+  ```bash
   git clone -b v1.3.1-windows  https://gitee.com/troxyz/airsim.git --depth 1
   ```
 
@@ -71,7 +71,7 @@
 
   - 从 `开始` 菜单启动 `Developer Command Prompt for VS 2019` 或者 `Developer Powershell for VS 2019`. 一下子找不到就在开始菜单搜索下。
 
-    <img src="AirSim 仿真 (1) - Windows 10 下安装仿真平台 AirSim - v1.3.1.assets/image-20200606130910725.png" alt="image-20200606130910725" style="zoom:50%;" />
+    ![image-20200606130910725](<AirSim%20%E4%BB%BF%E7%9C%9F%20(1)%20-%20Windows%2010%20%E4%B8%8B%E5%AE%89%E8%A3%85%E4%BB%BF%E7%9C%9F%E5%B9%B3%E5%8F%B0%20AirSim%20-%20v1.3.1.assets/image-20200606130910725.png>)
 
   - `cd` 切换到 `airsim` 的源码目录下.
 
@@ -91,12 +91,12 @@
 
 - 打开生成的 `.sln` 工程文件，项目配置为 `DebugGame_Editor` ，`Win64`.
 
-  ![image-20200606140541011](AirSim 仿真 (1) - Windows 10 下安装仿真平台 AirSim - v1.3.1.assets/image-20200606140541011.png)
+  ![image-20200606140541011](<AirSim%20%E4%BB%BF%E7%9C%9F%20(1)%20-%20Windows%2010%20%E4%B8%8B%E5%AE%89%E8%A3%85%E4%BB%BF%E7%9C%9F%E5%B9%B3%E5%8F%B0%20AirSim%20-%20v1.3.1.assets/image-20200606140541011.png>)
 
 - 运行，这时候会启动 UE，点击运行按钮，可以看到小车出现，方向键即可控制小车运动。
 
-  <img src="AirSim 仿真 (1) - Windows 10 下安装仿真平台 AirSim - v1.3.1.assets/image-20200606140845322.png" alt="image-20200606140845322" style="zoom:50%;" />
+  ![image-20200606140845322](<AirSim%20%E4%BB%BF%E7%9C%9F%20(1)%20-%20Windows%2010%20%E4%B8%8B%E5%AE%89%E8%A3%85%E4%BB%BF%E7%9C%9F%E5%B9%B3%E5%8F%B0%20AirSim%20-%20v1.3.1.assets/image-20200606140845322.png>)
 
 - 按 `F1` 可看到帮助提示，可以看到深度图、分割图、相机窗口
 
-  <img src="AirSim 仿真 (1) - Windows 10 下安装仿真平台 AirSim - v1.3.1.assets/image-20200606141232221.png" alt="image-20200606141232221" style="zoom:50%;" />
+  ![image-20200606141232221](<AirSim%20%E4%BB%BF%E7%9C%9F%20(1)%20-%20Windows%2010%20%E4%B8%8B%E5%AE%89%E8%A3%85%E4%BB%BF%E7%9C%9F%E5%B9%B3%E5%8F%B0%20AirSim%20-%20v1.3.1.assets/image-20200606141232221.png>)
